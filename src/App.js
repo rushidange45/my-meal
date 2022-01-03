@@ -1,7 +1,8 @@
 import "./App.css";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
-	return <div className="App">My Meal</div>;
+	return <Routes></Routes>;
 }
 
 export default App;
