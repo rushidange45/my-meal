@@ -1,7 +1,14 @@
-import "./App.css";
+import { Button, Typography } from "@mui/material";
 
 function App() {
-	return <div className="App"></div>;
+	return (
+		<>
+			<Button color="secondary" variant="contained">
+				neutral
+			</Button>
+			<Typography color={`primary`}>hello hi!</Typography>
+		</>
+	);
 }
 
 export default App;
