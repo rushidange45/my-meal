@@ -1,27 +1,37 @@
 import "./App.css";
 import FirstPageLogo from "./pages/FirstPageLogo";
 import SecondPage from "./pages/SecondPage";
-
-// function App() {
-// 	return <div className="App"><SecondPage /> </div>;
-import { Routes, Route, useNavigate } from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useEffect, useLayoutEffect, useState } from "react";
 import "./assets/Mask Group 139.svg";
+import { routes } from "./routes/routes";
+import { FirstPage } from "@material-ui/icons";
+import ThirdPage from "./pages/ThirdPage";
+import { Button } from "@material-ui/core";
 
 function App() {
 	const [width, height] = useWindowSize();
+	// const navigateToVerify = () => console.log('click');
 	return width <= 450 && height <= 850 ? (
 		<div className="App">
-			<Routes>
-				<Route
+			{/* <SecondPage />
+			<FirstPageLogo /> */} 
+			{/* {/* <ThirdPage/> */}
+			
+				{/* <Route
 					path="/"
 					element={
-						<h4>
-							Window size: {width} x {height}
-						</h4>
+						<FirstPageLogo/>
 					}
-				/>
-			</Routes>
+				/> */}
+				{/* <Button onCLick={navigateToVerify}>GO To verigy</Button> */}
+			<Router>
+			<Switch>
+			{
+				routes.map(({path,Comp}) => <Route exact={true} path={path} component={Comp} />				)
+			}
+			</Switch>
+		</Router>
 		</div>
 	) : (
 		<h4>change to mobile view</h4>
