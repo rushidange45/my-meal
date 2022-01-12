@@ -21,7 +21,8 @@ const useStyles = makeStyles(({
     
     },
     buttonsToChooseMealTime:{
-      display:"flex"      
+      display:"flex" ,
+      justifyContent:"space-evenly"
     },
     daysButton:{
         width:"fitContent",
@@ -46,8 +47,6 @@ const useStyles = makeStyles(({
         display:"flex",
         borderRadius:"20px",
         margin:"2px",
-        // width:"fitContent",
-        // padding:"2px",
         textTransform:"capitalize",
         border:"1px solid gray"
     }

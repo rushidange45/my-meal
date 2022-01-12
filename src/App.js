@@ -24,20 +24,14 @@ function App() {
 			{/* <FifthPage /> */}
 			{/* <FifteenthPage />	 */}
 			{/* <SubscriptionPriceComp/> */}
-				{/* <Route
-					path="/"
-					element={
-						<FirstPageLogo/>
-					}
-				/> */}
-				{/* <Button onCLick={navigateToVerify}>GO To verigy</Button> */}
-			<Router>
+				
+			 <Router>
 			<Switch>
 			{
 				routes.map(({path,Comp}) => <Route exact={true} path={path} component={Comp} />				)
 			}
 			</Switch>
-		</Router>
+		</Router> 
 		</div>
 	) : (
 		<h4>change to mobile view</h4>

@@ -140,7 +140,7 @@ function UserDetailForm({useStyles,propFromFifthPage, changeRoute, value, fromFo
                                   <Typography className={classes.secondFifthPageTypography}>00:45</Typography>
                                   <Typography className={classes.secondFifthPageTypography}>Didn't get the Code ?
                                     <Button style={{color:"red",marginLeft:"10px", fontSize:"10px", fontWeight:"bold"}}>Resend Code</Button></Typography>
-                                  <Button className={classes.buttons} disabled={isDisabled} onClick={toDisplayErrorMessage}>Submit</Button>
+                                  <Button className={classes.buttons} variant="contained" color="primary" disabled={isDisabled} onClick={toDisplayErrorMessage}>Submit</Button>
                          </Paper>
                      </Box>
                       
