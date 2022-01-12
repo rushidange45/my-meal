@@ -9,7 +9,8 @@ import {routes} from "./routes/routes"
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		{/*<App />*/}
+		<div>hello</div>
 	</React.StrictMode>,
 	document.getElementById("root")
 );
