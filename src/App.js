@@ -21,9 +21,9 @@ function App() {
 				backgroundRepeat: "no-repeat",
 				backgroundPosition: "center",
 				backgroundSize: "cover",
-				overflow: "hidden",
+				overflowX: "hidden",
 				p: 2,
-				pb: 0,
+				pt: 4,
 			}}>
 			<Routes>
 				{routes.map(({ path, comp }) => {
