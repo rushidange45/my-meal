@@ -8,16 +8,22 @@ import { routes } from "./routes/routes";
 import { FirstPage } from "@material-ui/icons";
 import ThirdPage from "./pages/ThirdPage";
 import { Button } from "@material-ui/core";
-
+import FourthPage from "./pages/FourthPage";
+import FifthPage from "./pages/FifthPage";
+import SubscriptionPriceComp from "./components/SubscriptionPriceComp";
+import FifteenthPage from "./components/FifteenthPage/FifteenthPage";
 function App() {
 	const [width, height] = useWindowSize();
 	// const navigateToVerify = () => console.log('click');
 	return width <= 450 && height <= 850 ? (
 		<div className="App">
-			{/* <SecondPage />
-			<FirstPageLogo /> */} 
+			{/* <SecondPage /> */}
+			{/*<FirstPageLogo /> */} 
 			{/* {/* <ThirdPage/> */}
-			
+			{/* <FourthPage /> */}
+			{/* <FifthPage /> */}
+			{/* <FifteenthPage />	 */}
+			{/* <SubscriptionPriceComp/> */}
 				{/* <Route
 					path="/"
 					element={
